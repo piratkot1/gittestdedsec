@@ -1,0 +1,331 @@
+Admin@ECON-184-4 MINGW64 ~
+$ ls
+'3D Objects'/
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+ Links/
+'Local Settings'@
+ Music/
+ NTUSER.DAT
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TM.blf
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ Pictures/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+ Videos/
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+'Мои документы'@
+ Шаблоны@
+'главное меню'@
+
+Admin@ECON-184-4 MINGW64 ~
+$ cd /g/dedsec/
+
+Admin@ECON-184-4 MINGW64 /g/dedsec
+$ pwd
+/g/dedsec
+
+Admin@ECON-184-4 MINGW64 /g/dedsec
+$ git config --global user.name "Kharchenko Dedsec"
+
+Admin@ECON-184-4 MINGW64 /g/dedsec
+$ git config --global user.email "sergey666zak.3@yandex.ru"
+
+Admin@ECON-184-4 MINGW64 /g/dedsec
+$ git init
+Initialized empty Git repository in G:/dedsec/.git/
+
+Admin@ECON-184-4 MINGW64 /g/dedsec
+$ ls
+
+Admin@ECON-184-4 MINGW64 /g/dedsec
+$ ls -a
+./  ../  .git/
+
+Admin@ECON-184-4 MINGW64 /g/dedsec
+$ cd /g/GitRepo/dedsec/
+
+Admin@ECON-184-4 MINGW64 /g/GitRepo/dedsec
+$ git status
+fatal: detected dubious ownership in repository at 'G:/GitRepo/dedsec'
+'G:/GitRepo/dedsec' is owned by:
+        'S-1-5-21-556891973-2291426999-646152604-1003'
+but the current user is:
+        'S-1-5-21-556891973-2291426999-646152604-1002'
+To add an exception for this directory, call:
+
+        git config --global --add safe.directory G:/GitRepo/dedsec
+
+Admin@ECON-184-4 MINGW64 /g/GitRepo/dedsec
+$ git config --global --add safe.direcory  G:/GitRepo/dedsec
+
+Admin@ECON-184-4 MINGW64 /g/GitRepo/dedsec
+$ git status
+fatal: detected dubious ownership in repository at 'G:/GitRepo/dedsec'
+'G:/GitRepo/dedsec' is owned by:
+        'S-1-5-21-556891973-2291426999-646152604-1003'
+but the current user is:
+        'S-1-5-21-556891973-2291426999-646152604-1002'
+To add an exception for this directory, call:
+
+        git config --global --add safe.directory G:/GitRepo/dedsec
+
+Admin@ECON-184-4 MINGW64 /g/GitRepo/dedsec
+$  git config --global --add safe.directory G:/GitRepo/dedsec
+
+Admin@ECON-184-4 MINGW64 /g/GitRepo/dedsec (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        virus.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Admin@ECON-184-4 MINGW64 /g/GitRepo/dedsec (master)
+$ git add virus.txt
+
+Admin@ECON-184-4 MINGW64 /g/GitRepo/dedsec (master)
+$ git staus
+git: 'staus' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+Admin@ECON-184-4 MINGW64 /g/GitRepo/dedsec (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   virus.txt
+
+
+Admin@ECON-184-4 MINGW64 /g/GitRepo/dedsec (master)
+$ git clone https://github.com/piratkot1/gittestdedsec.git
+Cloning into 'gittestdedsec'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+Admin@ECON-184-4 MINGW64 /g/GitRepo/dedsec (master)
+$ git gstatus
+git: 'gstatus' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+Admin@ECON-184-4 MINGW64 /g/GitRepo/dedsec (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   virus.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        gittestdedsec/
+
+
+Admin@ECON-184-4 MINGW64 /g/GitRepo/dedsec (master)
+$ git add gittestdedsec
+warning: adding embedded git repository: gittestdedsec
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> gittestdedsec
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached gittestdedsec
+hint:
+hint: See "git help submodule" for more information.
+
+Admin@ECON-184-4 MINGW64 /g/GitRepo/dedsec (master)
+$ cd /g/GitRepo/gittestdedsec/
+bash: cd: /g/GitRepo/gittestdedsec/: No such file or directory
+
+Admin@ECON-184-4 MINGW64 /g/GitRepo/dedsec (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   gittestdedsec
+        new file:   virus.txt
+
+
+Admin@ECON-184-4 MINGW64 /g/GitRepo/dedsec (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   gittestdedsec
+        new file:   virus.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified:   gittestdedsec (untracked content)
+
+
+Admin@ECON-184-4 MINGW64 /g/GitRepo/dedsec (master)
+$ cd /g/GitRepo/dedsec/gittestdedsec/
+
+Admin@ECON-184-4 MINGW64 /g/GitRepo/dedsec/gittestdedsec (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        mama.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Admin@ECON-184-4 MINGW64 /g/GitRepo/dedsec/gittestdedsec (main)
+$ git add mama.txt
+
+Admin@ECON-184-4 MINGW64 /g/GitRepo/dedsec/gittestdedsec (main)
+$ git push
+Everything up-to-date
+
+Admin@ECON-184-4 MINGW64 /g/GitRepo/dedsec/gittestdedsec (main)
+$ git push
+Everything up-to-date
+
+Admin@ECON-184-4 MINGW64 /g/GitRepo/dedsec/gittestdedsec (main)
+$ git push
+Everything up-to-date
+
+Admin@ECON-184-4 MINGW64 /g/GitRepo/dedsec/gittestdedsec (main)
+$ gi push
+bash: gi: command not found
+
+Admin@ECON-184-4 MINGW64 /g/GitRepo/dedsec/gittestdedsec (main)
+$ git push
+Everything up-to-date
+
+Admin@ECON-184-4 MINGW64 /g/GitRepo/dedsec/gittestdedsec (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   mama.txt
+
+
+Admin@ECON-184-4 MINGW64 /g/GitRepo/dedsec/gittestdedsec (main)
+$ git commit -m "matilda"
+[main 86ae2b1] matilda
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 mama.txt
+
+Admin@ECON-184-4 MINGW64 /g/GitRepo/dedsec/gittestdedsec (main)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 283 bytes | 283.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/piratkot1/gittestdedsec.git
+   76edd19..86ae2b1  main -> main
+
+Admin@ECON-184-4 MINGW64 /g/GitRepo/dedsec/gittestdedsec (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   mama.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Admin@ECON-184-4 MINGW64 /g/GitRepo/dedsec/gittestdedsec (main)
+$ git add mama.txt
+
+Admin@ECON-184-4 MINGW64 /g/GitRepo/dedsec/gittestdedsec (main)
+$ git commit -m "matilda"
+[main bd91523] matilda
+ 1 file changed, 88 insertions(+)
+
+Admin@ECON-184-4 MINGW64 /g/GitRepo/dedsec/gittestdedsec (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 5.30 KiB | 5.30 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/piratkot1/gittestdedsec.git
+   86ae2b1..bd91523  main -> main
+
+Admin@ECON-184-4 MINGW64 /g/GitRepo/dedsec/gittestdedsec (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        shmatko.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Admin@ECON-184-4 MINGW64 /g/GitRepo/dedsec/gittestdedsec (main)
+$ git add shmatko.txt
+
+Admin@ECON-184-4 MINGW64 /g/GitRepo/dedsec/gittestdedsec (main)
+$ git commit -m "shamtko"
+[main fb3e98d] shamtko
+ 1 file changed, 118 insertions(+)
+ create mode 100644 shmatko.txt
+
+Admin@ECON-184-4 MINGW64 /g/GitRepo/dedsec/gittestdedsec (main)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 5.28 KiB | 5.28 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/piratkot1/gittestdedsec.git
+   bd91523..fb3e98d  main -> main
+
+Admin@ECON-184-4 MINGW64 /g/GitRepo/dedsec/gittestdedsec (main)
+$
